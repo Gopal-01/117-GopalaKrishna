@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head >
+<body style="text-align:center">
+    <br><br>
+<h2> <b> word <span style="color: coral;">counting</span> exercise</b></h2> 
+<p>this textbox auto <span style="color: rgb(112, 80, 255);">counts</span> the words!!!!!!!!!!!!!!</p>
+<textarea id="word" rows="9" cols="60" onkeyup="count_up(this);"></textarea>
+<p>
+    Auto Counting words:
+    <span id = "wordscount">0</span>
+</p>
+<p>
+    Auto Counting words:
+    <span id = "lettercount">0</span>
+</p>
+<script>
+document.querySelector("#word").addEventListener("input", function countWord() {
+          let res = [];
+          let str = this.value.replace(/[\t\n\r\.\?\!]/gm, " ").split(" ");
+          str.map(
+              (s) => {
+            let trimStr = s.trim();
+            if (trimStr.length > 0) {
+              res.push(trimStr);
+            }
+          });
+          document.querySelector("#wordscount").innerText = res.length;
+        });
+
+</script>
+<script>
+
+function count_up(obj)
+{
+    document.getElementById('lettercount').innerHTML = obj.value.length;
+
+}
+</script>
+
+</body>
+</html>
