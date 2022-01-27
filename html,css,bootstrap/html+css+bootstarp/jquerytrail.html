@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    #pp{
+        left: 50%;
+        top: 50%
+    }
+    .aa{
+         display: none;
+     }
+     .showlogin:hover + .aa{
+           display: block;
+     }
+</style>
+  
+  
+  <script>
+   $(document).ready(function(){
+$('#tohide').hide();
+$('#tohide1').hide(); 
+ 
+
+
+   $('#showlogin').click(function(){
+    $('#tohide1').hide();
+        $('#tohide').show();
+ });
+
+ $('#showlogin1').click(function(){
+    $('#tohide').hide();
+    $('#tohide1').show();
+ });
+
+// $('#submitdata').click(function(){
+// var u=$('#u1').val();
+// var w=$('#p1').val();
+// alert(u);
+// alert(w);
+// });
+
+// $('#userid').keydown(function(){
+//     alert("key is down");
+// });
+});
+
+  </script>
+</head>
+<body style="background-color:greenyellow;">
+
+<div class="container">
+  <h3><b>TABS</b></h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href=""><b>Home</b></a></li>
+    <p><strong>Note:</strong> This example shows how to create a basic navigation tab. </p>
+    <li>
+        <a id="showlogin">Menu 1</a>
+        <div id="pp">
+    <div id="tohide">
+        <center>
+    
+            <form class="aa">
+                    <fieldset>
+                        <legend><b>login</b></legend>
+                        <label for="userid">Enter User id</label>
+                        <input type="text" id="u1" name="userid" minlength ="10" maxlength="20" required />
+                        <br/>
+                        <label for="pwd">Enter Password</label>
+                        <input type="password" id="p1" name="pwd" required />
+                        <br/>
+                        <input type="submit" value="Submit" />
+            
+            
+                    </fieldset>
+                </form>
+            
+                
+                </center>
+            </div>
+    </div>
+    </li>
+   <li>
+       <a id ="showlogin1"><b>menu 2</b> </a>
+       <div id="pp">
+    <div id="tohide1">
+        <center>
+    
+           <form>
+               <fieldset>
+                <legend> <b>register form</b></legend>
+                <table>
+                 <tr>
+                  <td>Name :</td>
+                  <td><input type="text"></td>
+                 </tr>
+                 <tr>
+                  <td>Password :</td>
+                  <td><input type="password"></td>
+                 </tr>
+                 <tr>
+                  <td>Gender :</td>
+                  <td>
+                   <input type="radio" name="Gender"> Male
+                   <input type="radio" name="Gender"> Female
+                  </td>
+                 </tr>
+                 <tr>
+                  <td>Email :</td>
+                  <td><input type="email"></td>
+                 </tr>
+                 <tr>
+                  <td>Phone no :</td>
+                  <td>
+                   <select>
+                    <option>977</option>
+                    <option>978</option>
+                    <option>979</option>
+                    <option>973</option>
+                    <option>972</option>
+                    <option>974</option>
+                   </select>
+                   <input type="phone">
+                  </td>
+                 </tr>
+                 <tr>
+                  <td><input type="submit" value="Submit"></td>
+                 </tr>
+                </table>
+        
+               </fieldset>
+               <p> this is form register</p>
+           </form>
+            
+                
+                </center>
+            </div>
+    </div>
+   </li>
+   
+   <li><a href="jqueryform.html">Menu 3</a></li>
+     </div>
+   
+  </ul>
+  <br>
+  </div>
+
+</body>
+</html>

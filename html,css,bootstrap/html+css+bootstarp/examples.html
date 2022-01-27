@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const perosn = { id:"", fname:"",lname:""}
+    function submitData()
+    {
+        perosn.id = document.getElementById('pid').value;
+        perosn.fname = document.getElementById('firstname').value;
+    }
+    function showdata()
+    {
+        window.location.href="output.html";
+            }
+</script>
+<body>
+    <form>
+        <label>enter id</label>
+        <input tyupw="number" name =" pid" id="id"/>
+        <br/>
+        <label>enter name</label>
+        <input type="String" name ="firstname" id="firstname"/>
+        <br/>
+        <button onclick="submitData()">submit</button>
+        <button onclick="showdata()"></button>
+    </form>
+</body>
+</html>

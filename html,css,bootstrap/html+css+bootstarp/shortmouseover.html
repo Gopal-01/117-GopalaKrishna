@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+        .hh{
+            display:none ;
+        } 
+        
+            .bb:hover + .hh{
+             display: block;
+        }
+
+        .a{
+            display:none ;
+        } 
+        
+            .cc:hover + .a{
+             display: block;
+        }
+        
+        .bb{
+            background-color: #04AA6D;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        .cc{
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: 1px solid;
+        }
+        .z1{
+            display:none ;
+        } 
+        
+            .z:hover + .z1{
+             display: block;
+        }
+        
+        </style>
+</head>
+<body>
+    <div>
+    <h1> hellow world</h1>
+    <button type="button" class="bb" >button 1 </button>
+    
+    <h1 class="hh">this is the infrmation which is hidn under the button...!!!</h1>
+    <hr/>
+
+    
+</div>
+    
+    <button type="button" class="cc" >button 2 </button>     
+    
+        <form class="a">
+            <fieldset>
+             <legend> <b>register form</b></legend>
+             <table>
+              <tr>
+               <td>Name :</td>
+               <td><input type="text"></td>
+              </tr>
+              <tr>
+               <td>Password :</td>
+               <td><input type="password"></td>
+              </tr>
+              <tr>
+               <td>Gender :</td>
+               <td>
+                <input type="radio" name="Gender"> Male
+                <input type="radio" name="Gender"> Female
+               </td>
+              </tr>
+              <tr>
+               <td>Email :</td>
+               <td><input type="email"></td>
+              </tr>
+              <tr>
+               <td>Phone no :</td>
+               <td>
+                <select>
+                 <option>977</option>
+                 <option>978</option>
+                 <option>979</option>
+                 <option>973</option>
+                 <option>972</option>
+                 <option>974</option>
+                </select>
+                <input type="phone">
+               </td>
+              </tr>
+              <tr>
+               <td><input type="submit" value="Submit"></td>
+              </tr>
+             </table>
+     
+            </fieldset>
+           
+        </form>
+        <hr/>
+        <div class="dropdown">
+            <button class="dropbtn">Dr-Drop</button>
+            <div class="dropdown-content">
+              <a class="z" href="">anime</a>
+              <a href="">Cars</a>
+              <a href="">dog</a>
+              
+          </div>
+          <p class="z1">this belong to anime tag.</p>
+   
+    </div>
+         
+     
+        
+</body>
+</html>

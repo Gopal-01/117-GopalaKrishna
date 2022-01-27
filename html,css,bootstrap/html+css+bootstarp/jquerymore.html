@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title> hello</title>
+ 
+    <script>
+        // function sayhello()
+        // {
+        //     alert("hello ");
+        // }
+       
+         $(document).ready(function()
+             {
+               
+                // var text=$('#b1').text();
+                // alert("text()   " + text);
+                // var html=$('#p1').html();
+                // alert("html()   " + html);
+                // var val=$('#t1').val();
+                // alert('p1');
+                // var text =$('b2').text();
+                // alert("text()   " + text);
+                // var html=$('#p2').html();
+                // alert("html()   " + html);
+                // var val=$('#t2').val();
+                // alert('p2');
+                $('#b1').click(function(){
+                 var t=$('p').text();
+                  alert('the para containd the followigg' + t);
+                  var r =$('p').attr("id");
+                  alert("it is in the paragrapgh with id " + r);
+                });
+            }
+
+             );
+</script>
+
+</head>
+<body>
+    <input type =" text" id="t1" value=" gopal"/>
+    <p id="p1"> hello from <b>para</b> of the page</p>
+    <button id="b1">click</button>
+    <a href="https://www/google.com">google</a>
+
+</body>
+</html>
